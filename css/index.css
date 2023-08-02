@@ -15,6 +15,9 @@ a{
     text-decoration: none;
     color: var(--text);
 }
+li{
+    list-style: none;
+}
 
 span{
     color: var(--primary);
@@ -52,7 +55,7 @@ span{
 header{
     height: 100vh !important;
     background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/image1.jpeg) lightgray 50%  center/cover no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .hero .btn{
     background-color: var(--primary);
@@ -69,34 +72,299 @@ header{
 .hero-text-div{
     width: 90% !important;
 }
+header .content-wrapper{
+    background-color: var(--secondary);
+}
+header .content-wrapper .container-fluid{
+    width: 90% !important;
+    margin-inline: auto !important;
+}
+/* MAIN */
+/* section 1 */
 
 
-
-
-/* footer{
+.sec-1{
     width: 100%;
-    position:absolute;
+    height: 100vh;
+    background-color: var(--primary);
+    margin-top: 4.2rem !important;
+}
+.sec-1 .row{
+    width: 90% !important;
+    margin-inline: auto !important;
+}
+.sec-1 .col{
+    background-color: white;
+    border-radius: 5px;
+}
+.sec-1 .col .card{
+    /* width: 90% !important;
+    margin-inline: auto !important;
+    margin-block: 0.5rem !important;
+    border: 0; */
+}
+.sec-1 .col .card img{
+    width: 100% !important;
+}
+.sec-1 .card p{
+    color: #82848A;
+    font-size: 0.75rem;
+}
+.sec-1 .card-footer{
+    color: #EA9337;
+    background-color: #FDF4EB;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* section 2 */
+
+
+
+/* section 3 */
+.section-three{
+    width: 100%;
+    height: 130vh !important;
+    background: var(--foundation-neutral-i-neutral-i-800, #25282D);
+}
+.heading{
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+}
+.heading span{
+    color: var(--foundation-secondary-secondary-500, #EA9337);
+}
+.testimonials{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap:0;
+    justify-content: center;
+    margin: 0 auto;
+}
+.each-testimonial{
+    position: relative;
+    overflow: hidden;
+}
+.testimonials img{
+    width: 144px;
+    height: 480px;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: transform 0.3s;
+}
+.each-testimonial .text{
+    position: absolute;
     bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.each-testimonial p{
+    padding: 5px 0px 15px;
+}
+.each-testimonial span{
+    color: var(--foundation-secondary-secondary-500, #EA9337);
+}
+.each-testimonial:hover img {
+    width: 480px;
+    height: 480px;
+    filter: grayscale(10%);
+    transform: scale(1.2); /*Regain actual width on hover*/
+}
+.each-testimonial:hover .text {
+    opacity: 1; /* Show the text on hover */
+}
+.get-started{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.click-start{
+    border-radius: 7px;
+    border: none;
+    background: var(--foundation-secondary-secondary-500, #EA9337);
+    margin: 40px 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+.click-start i{
+    color: var(--foundation-neutral-i-neutral-i-50, #ECEDEE);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+}
+
+/* Responsiveness of the design */
+@media only screen and (max-width: 600px){
+    .heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .testimonials{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .testimonials img{
+        width: 80%;
+        height: fit-content;
+        margin: 20px;
+    }
+    .each-testimonial .text{
+        font-size: 13px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium devices and up */
+    }
+    .testimonials img{
+        width: 80%;
+        height: 80%;
+    }
+    .each-testimonial .text{
+        font-size: 14px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on large devices and up */
+    }
+    .testimonials img{
+        width: 90%;
+        height: 90%;
+    }
+    .each-testimonial .text{
+        font-size: 14px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on extra large devices and up */
+    }
+    .testimonials img{
+        width: 90%;
+        height: 95%;
+    }
+    .each-testimonial .text{
+        font-size: 15px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials{
+        grid-template-columns: repeat(8, auto);
+    }
+    .testimonials img{
+        width: 144px;
+        height: 480px;
+    }
+    .each-testimonial .text{
+        font-size: 18px;
+    }
+    .each-testimonial:hover img {
+        width: 480px;
+        height: 480px;
+    }
+    .click-start i{
+        font-size: 20px; 
+    }
+}
+
+
+
+/* footer */
+footer{
+    width: 100%;
+    height: 70vh !important;
     background: linear-gradient(to right,#050e47,rgb(7, 7, 146));
     color:white;
     padding: 100px 0 30px;
     border-top-left-radius:125 px;
     font-size:18px;
-    /* line-height:20px; */
+    line-height:20px;
 }
-footer .row{
-    width: 85%;
-    margin-inline: auto;
-    display: flex;
-    flex-wrap:wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+footer .container{
+    height: 100% !important;
+    
 }
-footer .col{
-    flex-basis: 25%;
-    padding: 20px;
-    color:white;
+.Social-platforms a{
+    background-color: #EA9337;
 }
+
 footer .logo{
     width: 80px;
     margin-bottom: 30px;
@@ -105,44 +373,18 @@ footer .logo{
 footer p{
     color:white;
 }
-footer .col h3{
-    width:fit-content ;
-    margin-bottom: 10px;
-    position:relative;
-    
-}
+
  
 footer ul li{
-    list-style: none;
-    margin-bottom: 15px;
-    border-bottom: 3px solid orange;
-    margin: 20px 0;
+    border-bottom: 2px solid orange;
     width: fit-content;
-
-}
-footer ul li a{
-    text-decoration: none;
-    color: white;
 }
 
-footer .col h3 a{
-    text-decoration: none;
-    padding: 10px;
-    background-color: orange;
-    margin: 10px;
-    border-radius: 50%;
-}
 
-footer .col h3 a i{
-    font-size: 2px;
-    color: white;
 
-}
-footer .row copyright{
-    text-align: center;
-    justify-content:no space-evenly;
 
-} */
+
+
 
 /* login page styles */
 .login-container{
@@ -150,14 +392,15 @@ footer .row copyright{
     /* margin-top: -5rem; */
     height: 100vh;
     background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../public/images/modal-bg.png) lightgray 50%  center/cover no-repeat;
+    
 }
 .login-container .btn:hover{
     background-color: var(--primary);
     color: var(--text);
 }
-form .container-fluid .fa-xmark{
-    color: var(--primary);
-    font-size: 3rem;
+.login-container .login-icon{
+    display: flex !important;
+    gap: 15rem !important;
 }
 form input{
     width: 50% !important;
