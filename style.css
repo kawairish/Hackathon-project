@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(9, 9, 9);
+}
+
+footer{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    background: linear-gradient(to right,#050e47,rgb(7, 7, 146));
+    color:white;
+    padding: 100px 0 30px;
+    border-top-left-radius:125 px;
+    font-size:18px;
+    line-height:20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 20px;
+    color:white;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+    
+}
+p{
+    color:white;
+}
+.col h3{
+    width:fit-content ;
+    margin-bottom: 10px;
+    position:relative;
+    
+}
+ 
+ul li{
+    list-style: none;
+    margin-bottom: 15px;
+    border-bottom: 3px solid orange;
+    margin: 20px 0;
+    width: fit-content;
+
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.col h3 a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: orange;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.col h3 a i{
+    font-size: 2px;
+    color: white;
+
+}
+.row copyright{
+    text-align: center;
+    justify-content:no space-evenly;
+
+}
+
