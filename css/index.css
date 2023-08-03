@@ -79,7 +79,7 @@ header  .slideshow img {
 }
 header{
     height: 100vh !important;
-    /* background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/image1.jpeg) lightgray 50%  center/cover no-repeat; */
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/image1.jpeg) lightgray 50%  center/cover no-repeat;
     /* background: url(../images/gs-bg.png) lightgray 50%  center/cover no-repeat;
     background: url(../images/modal-bg.png) lightgray 50%  center/cover no-repeat; */
 
