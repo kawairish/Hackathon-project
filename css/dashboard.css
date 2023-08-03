@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 body{
     width: 100% !important;
     height: 100vh !important;
@@ -60,4 +66,7 @@ main .teacher-bar{
   /* Darker background on mouse-over */
 .download .btn:hover {
     background-color: RoyalBlue;
+}
+.student-grade{
+    width: 50%;
 }

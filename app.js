@@ -46,3 +46,51 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+// Dashboard
+function Calendar() {
+    this.container = document.querySelector('.calendar');
+    this.date = new Date();
+}
+
+Calendar.prototype.init = function() {
+    var self = this;
+
+    // Create the calendar table
+    var table = document.createElement('table');
+    table.setAttribute('class', 'calendar-table');
+
+    // Create the calendar header
+    var headerRow = document.createElement('tr');
+    var headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Sun';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Mon';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Tue';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Wed';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Thu';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Fri';
+    headerRow.appendChild(headerCell);
+    headerCell = document.createElement('th');
+    headerCell.innerHTML = 'Sat';
+    headerRow.appendChild(headerCell);
+    table.appendChild(headerRow);
+
+    // Create the calendar body
+    var currentMonth = this.date.getMonth();
+    var currentYear = this.date.getFullYear();
+    var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    var firstDay = new Date(currentYear, currentMonth, 1).getDay();
+    var lastDay = new Date(currentYear, currentMonth, daysInMonth).getDay();
+
+    var bodyRow = document
+}
