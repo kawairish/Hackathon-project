@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary:#5189F7 ;
+    --secondary:#25282D ;
+    --text:#ECEDEE;
+    --bg: #444851;
+}
+footer{
+    width: 100%;
+    height: 70vh !important;
+    background-color: #D58632;
+    color: #191717 !important;
+    padding: 100px 0 30px;
+    border-top-left-radius:125 px;
+    font-size:18px;
+    line-height:20px;
+}
+footer .container{
+    height: 100% !important;
+    
+}
+footer .col .logo{
+    width: 127.027px;
+    height: 100px; 
+}
+footer li a{
+    color: #191717;
+}
+.Social-platforms a{
+    background-color: var(--primary);
+    color: #191717;
+}
+
+footer .phone .text{
+    color: #191717;
+}
+footer .phone span{
+    color: #FDF4EB;
+}
+footer p{
+    color: #1D1E22;
+}
+
+footer .copyright .text {
+    color: #FFFFFF;
+}
+footer .copyright span{
+    color: #FFFFFF;
+}
+footer hr{ 
+    border: 1px solid #FFFFFF;
+    /* color: #FFFFFF; */
+}
+footer ul li{
+    border-bottom: 2px solid orange;
+    width: fit-content;
+}
