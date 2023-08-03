@@ -11,53 +11,80 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top py-3">
-            <div class="container-fluid gap-md-5">
-                <a class="navbar-brand" href="#">
-                    <img src="../images/logo.png" alt="" width="208" height="56">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="first-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-link2" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-link3" href="#">Donations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-link4" href="#">Blog</a>
-                        </li>
-                        
-                    </ul>
-                    <div class="btn-div d-flex gap-4">
-                        <button class="btn btn-1 btn-outline-warning px-5 py-2" type="submit" onclick="window.location.href='./login.html'">Login</button>
-                        <button class="btn btn-2 btn-outline-light px-5 py-2 me-5" type="submit" onclick="window.location.href='./getstarted.html'">Get started</button>
-                    </div>
+
+            <div class="slideshow">
+                <div class="mySlides fade">
+                    <img src="../images/image1.jpeg" alt="" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="../images/gs-bg.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="../images/modal-bg.png" style="width:100%">
                 </div>
             </div>
-        </nav>
-        <div class="container d-flex justify-content-center align-items-center text-center text-white h-100">
-            <div class="hero">
-                <h1 class="display-3 fw-medium mb-3">
-                    Every Child Deserves <br> <span>QUALITY</span> Education
-                </h1>
-                <button class="btn border rounded px-3 py-2"><a href="../html/signup.html">Register your child now!</a></button>
-            </div>
+            <nav class="navbar navbar-expand-lg fixed-top py-3">
+                <div class="container-fluid gap-md-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="first-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-link1">
+                                    Features
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-black" href="#">Content library</a></li>
+                                    <li><a class="dropdown-item text-black" href="../html/download.html">Offline downloads</a></li>
+                                    <li><a class="dropdown-item text-black" href="#">Progress & Analytics</a></li>
+                                    <li><a class="dropdown-item text-black" href="#">AI chatbot</a></li>
+                                    <li><a class="dropdown-item text-black" href="# ">Pop-up quizzes</a></li>
+                                </ul>
+                            </li>  
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link2" href="#">Donations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link3" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link4" href="#">Blog</a>
+                            </li>
             
-        </div>
-        <div class="content-wrapper py-3">
-            <div class="container-fluid text-white d-flex justify-content-between">
-                <p class="fs-4 fw-normal"><span>12K+</span> Students enrolled</p>
-                <p class="fs-4 fw-normal"><span>1M+</span> Downloaded contents</p>
-                <p class="fs-4 fw-normal"><span>2K+</span> Hours of learning</p>
+                        </ul>
+                        <div class="btn-div d-flex gap-4">
+                            <button class="btn btn-1 btn-outline-warning px-5 py-2" type="submit" onclick="window.location.href='./login.html'">Login</button>
+                            <button class="btn btn-2 btn-outline-light px-5 py-2 me-5" type="submit" onclick="window.location.href='./getstarted.html'">Get started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container d-flex justify-content-center align-items-center text-center text-white h-100">
+                <div class="hero">
+                    <h1 class="display-3 fw-medium mb-3">
+                        Every Child Deserves <br> <span>QUALITY</span> Education
+                    </h1>
+                    <button class="btn border rounded px-3 py-2"><a href="../html/signup.html">Register your child now!</a></button>
+                </div>
+            
             </div>
-        </div>
+            <div class="content-wrapper py-3">
+                <div class="container-fluid text-white d-flex justify-content-between">
+                    <p class="fs-4 fw-normal"><span>12K+</span> Students enrolled</p>
+                    <p class="fs-4 fw-normal"><span>1M+</span> Downloaded contents</p>
+                    <p class="fs-4 fw-normal"><span>2K+</span> Hours of learning</p>
+                </div>
+            </div>
+        
         
     </header>
                 
@@ -74,11 +101,11 @@
                     <div class="card h-100">
                     <img src="../images/image2.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fs-4">Primary</h5>
-                        <p class="card-text my-4">Immersive lessons covering Mathematics, English & Science for the perfect academic head-start.</p>
+                        <h5 class="card-title fs-4">Elementary</h5>
+                        <p class="card-text my-4">Dive into an immersive world of STEM lessons, where young minds embrace the wonders of Science, Technology, Engineering, and Mathematics (STEM) for a brilliant academic head-start.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <small class="text-body-secondary">Start from here!</small>
+                        <a href="../html/dashboad.html"><small class="text-body-secondary">Start from here!</small></a>
                     </div>
                     </div>
                 </div>
@@ -86,11 +113,11 @@
                     <div class="card h-100">
                     <img src="../images/image3.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fs-4">Junior Secondary</h5>
-                        <p class="card-text my-4">Immersive lessons covering Mathematics, English & Science for the perfect academic head-start.</p>
+                        <h5 class="card-title fs-4">Middle School</h5>
+                        <p class="card-text my-4">Dive into an immersive world of STEM lessons, where young minds embrace the wonders of Science, Technology, Engineering, and Mathematics (STEM) for a brilliant academic head-start.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <small class="text-body-secondary">Start from here!</small>
+                        <a href="../html/dashboad.html"><small class="text-body-secondary">Start from here!</small></a>
                     </div>
                 </div>
                 </div>
@@ -98,11 +125,11 @@
                     <div class="card h-100">
                     <img src="../images/image4.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title fs-4">Senior Secondary</h5>
-                        <p class="card-text my-4">Immersive lessons covering Mathematics, English & Science for the perfect academic head-start.</p>
+                        <h5 class="card-title fs-4">High School</h5>
+                        <p class="card-text my-4">Dive into an immersive world of STEM lessons, where young minds embrace the wonders of Science, Technology, Engineering, and Mathematics (STEM) for a brilliant academic head-start.</p>
                     </div>
                     <div class="card-footer text-center">
-                        <small class="text-body-secondary ">Start from here!</small>
+                        <a href="../html/dashboad.html"><small class="text-body-secondary ">Start from here!</small></a>
                     </div>
                 </div>
                 </div>
@@ -161,8 +188,8 @@
         <div class="container w-75 mx-auto">
             <div class="row d-flex justify-content-center align-items-center gap-5 flex-md-nowrap py-5 mx-auto">
                 <div class="col">
-                    <img src="logo.png" class="logo">
-                    <p>Bridging education gaps,one child at a time with EmpowerED.</p>
+                    <img src="../images/logo-1.png" class="logo">
+                    <p class="mt-4">Bridging education gaps,one child at a time with EmpowerED.</p>
                 </div>
                 <div class="col">
                     <h3 class="mb-4">Explore</h3>
@@ -182,7 +209,7 @@
                         <li><a href="">Support Community</a></li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col phone">
                     <h3 class="mb-4">Contacts</h3>
                     <div class="phone mb-3">
                         <span class="fas fa-phone"></span>
@@ -197,7 +224,7 @@
             
             </div>
             <div class="col d-flex align-items-center gap-3 mb-4">
-                <h3 class="fs-6">Follow Us</h3>
+                <h3 class="fs-6">Follow us on our social media handles</h3>
                 <div class="Social-platforms d-flex gap-3">
                     <a href="" class="border rounded px-2 py-1"><i class="fa-brands fa-instagram"></i></a>
                     <a href="" class="border rounded px-2 py-1"><i class="fa-brands fa-tiktok"></i></a>
@@ -206,7 +233,7 @@
                 </div>
             </div>
             <hr>
-            <div class="row">
+            <div class="row copyright">
                 <div class="copyright fs-6 text-center my-3">
                 <span class="fas fa-copyright"></span>
                 <span class="text">Copyright 2023 |All rights reserved</span>

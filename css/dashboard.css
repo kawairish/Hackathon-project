@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    width: 100% !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: flex-start;
+}
+nav{
+    height: 100vh !important;
+    width: 25% !important;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #444851;
+}
+.list-span{
+    background-color: #EA9337;
+    color: #ECEDEE;
+}
+main{
+    width: 70% !important;
+    height: auto;
+    margin-top: 2rem !important;
+}
+.top-search input{
+    width: 60%;
+}
+.teacher-wrapper{
+    width: 30% !important;
+}
+main .teacher-bar{
+    border-radius: 8px;
+    background: #FCFCFC;
+}
+.profile-icons img{
+    border: 1px solid #EA9337 !important;
+}
+.teacher-bar .grade{
+    margin: -0.8rem !important;
+    margin-left: 0rem !important;
+    color: #82848A;
+}
+.left-div{
+    width: 40%;
+}
+
+.download .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+  /* Darker background on mouse-over */
+.download .btn:hover {
+    background-color: RoyalBlue;
+}

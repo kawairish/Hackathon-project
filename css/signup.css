@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .signup-container{
     /* width: 100%; */
     /* margin-top: -5rem; */
     height: 100vh;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../public/images/gs-bg.png) lightgray 50%  center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/gs-bg.png) lightgray 50%  center/cover no-repeat;
 }
 .btn{
     border-radius: 0;
@@ -83,7 +84,7 @@ form .form-div p{
 /* get started style */
 .get-started-container{
     height: 100vh;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../public/images/gs-bg.png) lightgray 50%  center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/gs-bg.png) lightgray 50%  center/cover no-repeat;
 }
 .get-started-container .svg-div1{
     border-color: #EA9337;
@@ -103,7 +104,7 @@ form .form-div p{
     /* width: 100%; */
     /* margin-top: -5rem; */
     height: 100vh;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../public/images/gs-bg.png) lightgray 50%  center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/gs-bg.png) lightgray 50%  center/cover no-repeat;
 }
 .confirm-container .btn{
     background-color: #EA9337;
@@ -122,3 +123,9 @@ form .form-div p{
     background-color: #FDF4EB;
     width: 10%;
 }
+
+
+
+
+/* dashboard styles */
+

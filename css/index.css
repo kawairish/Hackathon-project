@@ -6,7 +6,7 @@
     font-family: 'Inter', sans-serif;
 }
 :root{
-    --primary:#EA9337 ;
+    --primary:#5189F7 ;
     --secondary:#25282D ;
     --text:#ECEDEE;
     --bg: #444851;
@@ -22,8 +22,18 @@ li{
 span{
     color: var(--primary);
 }
+.navbar-brand img{
+    width: 207.054px;
+    height: 163px;
+    flex-shrink: 0;
+}
 #first-link{
     color: var(--primary)
+}
+#nav-link2{
+    background-color: var(--primary);
+    padding: 3px 10px !important;
+    border-radius: 3rem;
 }
 .navbar-nav li a{
     color: var(--text);
@@ -42,20 +52,53 @@ span{
     color: var(--primary);
 }
 .btn-1:hover{
-    background-color: #EA9337;
+    background-color: var(--primary);
     color: var(--text)
 }
 .btn-2{
-    background-color: #EA9337;
+    background-color: var(--primary);
     color: #ECEDEE;
 }
 .btn-2:hover{
     color: var(--primary);
 }
+header .slideshow {
+    position: relative;
+    max-width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+header  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 header{
     height: 100vh !important;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/image1.jpeg) lightgray 50%  center/cover no-repeat;
+    /* background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/image1.jpeg) lightgray 50%  center/cover no-repeat; */
+    /* background: url(../images/gs-bg.png) lightgray 50%  center/cover no-repeat;
+    background: url(../images/modal-bg.png) lightgray 50%  center/cover no-repeat; */
+
     /* background-attachment: fixed; */
+}
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 .hero .btn{
     background-color: var(--primary);
@@ -78,6 +121,9 @@ header .content-wrapper{
 header .content-wrapper .container-fluid{
     width: 90% !important;
     margin-inline: auto !important;
+}
+header .content-wrapper span{
+    color: #D58632;
 }
 /* MAIN */
 /* section 1 */
@@ -138,7 +184,7 @@ header .content-wrapper .container-fluid{
     font-style: normal;
 }
 .heading span{
-    color: var(--foundation-secondary-secondary-500, #EA9337);
+    color: var(--primary);
 }
 .testimonials{
     width: 100%;
@@ -350,8 +396,8 @@ header .content-wrapper .container-fluid{
 footer{
     width: 100%;
     height: 70vh !important;
-    background: linear-gradient(to right,#050e47,rgb(7, 7, 146));
-    color:white;
+    background-color: #D58632;
+    color: #191717 !important;
     padding: 100px 0 30px;
     border-top-left-radius:125 px;
     font-size:18px;
@@ -361,20 +407,38 @@ footer .container{
     height: 100% !important;
     
 }
+footer .col .logo{
+    width: 127.027px;
+    height: 100px; 
+}
+footer li a{
+    color: #191717;
+}
 .Social-platforms a{
-    background-color: #EA9337;
+    background-color: var(--primary);
+    color: #191717;
 }
 
-footer .logo{
-    width: 80px;
-    margin-bottom: 30px;
-    
+footer .phone .text{
+    color: #191717;
+}
+footer .phone span{
+    color: #FDF4EB;
 }
 footer p{
-    color:white;
+    color: #1D1E22;
 }
 
- 
+footer .copyright .text {
+    color: #FFFFFF;
+}
+footer .copyright span{
+    color: #FFFFFF;
+}
+footer hr{ 
+    border: 1px solid #FFFFFF;
+    /* color: #FFFFFF; */
+}
 footer ul li{
     border-bottom: 2px solid orange;
     width: fit-content;
@@ -391,7 +455,7 @@ footer ul li{
     /* width: 100%; */
     /* margin-top: -5rem; */
     height: 100vh;
-    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../public/images/modal-bg.png) lightgray 50%  center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(20, 20, 20, 0.56) 0%, rgba(20, 20, 20, 0.56) 100%), url(../images/modal-bg.png) lightgray 50%  center/cover no-repeat;
     
 }
 .login-container .btn:hover{

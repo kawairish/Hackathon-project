@@ -5,11 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <nav class="navbar w-25 h-100">
+        <div class="bar-nav my-5 mx-3 d-flex flex-column align-items-start">
+            <div class="logo mb-5">
+                <img src="" alt="">
+            </div>
+            <ul class="list.bar mb-5 pb-5">
+                <li class="nav-link nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-home.svg" alt="">
+                    Dashboard</li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-profile-2-user.svg" alt="">
+                    Student(s) <span class="list-span@@ ms-4 border rounded-pill py-1 px-2">198</span></li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-folder-2.svg" alt="">
+                    Content Library</li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-document-download.svg" alt="">
+                    Download Manager</li>
+                <li class="nav-link ">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-chart.svg" alt="">
+                    Progress & Analytics</li>
+            </ul>
+            <div class="nav-btn" >
+                <button class="btn">
+                    <span>
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-notification-bing.svg" alt="">
+                </span>
+                    Notifications
+                </button> <br>
+                <button class="btn">
+                    <span><img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-24-support.svg" alt=""></span>
+                    Support
+                </button> <br>
+                <button class="btn">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-logout.svg" alt="">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </nav>
         
-    </header>
+    <!-- main section -->
+    <main>
+        <div class="top-search d-flex justify-content-between align-items-center  mb-3">
+            <input type="search" name="" id="" placeholder="Search courses, students,  etc..." class="">
+            <div class="profile d-flex">
+                <img src="../images/dashboard-teacher-profile-picture.png" alt="">
+                <div class="dropdown">
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patricia Boateng
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="teacher-wrapper">
+                <div class="teacher-bar">
+                    <div class="title d-flex justify-content-between mb-3">
+                        <img src="../images/dashboard-teacher-profile-picture.png" alt="">
+                        <span>
+                            <div class="dropdown">
+                                <a class="btn btn-sm btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Edit profile
+                                </a>
+            
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="fs-6">Patricia Boateng</h1>
+                        <div class="profile-icons d-flex gap-3">
+                            <img src="../images/dashboard-message-sms.svg" alt="" class="px-2 py-1 border rounded">
+                            <span>
+                                <img src="../images/dashboard-call-calling.svg" alt="" class="px-2 py-1 border rounded">
+                            </span>
+                        </div>
+                    </div>
+                    <p class="grade">Grade 1</p>
+                    <div class="d-flex justify-content-between gap-4 mt-5">
+                        <p class="d-flex flex-column fw-bold fs-5">200 <span class="fw-normal fs-6">Enrolled</span></p>
+                        <p class="d-flex flex-column fw-bold fs-5">2k+ <span class="fw-normal fs-6">Reviewed</span></p>
+                        <p class="d-flex flex-column fw-bold fs-5">3k+ <span class="fw-normal fs-6">Live classes</span></p>
+                    </div>
+                </div>
+                <div class="student-grade">
+                    <p>Grade Students</p>
+                    <div class="student d-flex flex-column">
+                        <div class="imgicon-wrapper">
+                            <div class="student-img">
+                                <img src="../images/dashboard-student1.png" alt="">
+                                <span class=" d-flex">
+                                    <span><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <p>Reynold B.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="left-div">
+                <div class="my-calendar">
+                </div>
+                <div class="lesson-task">
+                    <div class="lesson-plan">
+                    </div>
+                    <div class="tasks">
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
 </body>
 </html>
