@@ -13,8 +13,8 @@
 }
 a{
     text-decoration: none;
-    color: var(--text);
-}
+    color: var(--text); 
+} 
 li{
     list-style: none;
 }
@@ -143,12 +143,7 @@ header .content-wrapper span{
     background-color: white;
     border-radius: 5px;
 }
-.sec-1 .col .card{
-    /* width: 90% !important;
-    margin-inline: auto !important;
-    margin-block: 0.5rem !important;
-    border: 0; */
-}
+
 .sec-1 .col .card img{
     width: 100% !important;
 }
