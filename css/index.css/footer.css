@@ -13,11 +13,10 @@
 }
 footer{
     width: 100%;
-    height: 108vh !important;
+    height: 90vh !important;
     background-color: #153B87;
     color: var(--text) !important;
-    padding: 100px 0 30px;
-    border-top-left-radius:125 px;
+    /* border-top-left-radius:125 px; */
     font-size:18px;
     line-height:20px;
 }
@@ -35,7 +34,12 @@ footer .col .logo{
     margin-top: 1.62rem !important;
     margin-right: -1.5rem !important;
 }
-
+footer #col{
+    margin-top: -14rem !important;
+}
+#col{
+    margin-top: 2rem !important;
+}
 .footer-dropdown{
     margin-top: -2rem !important;
     margin-bottom: 1rem !important;
