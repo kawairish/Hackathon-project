@@ -11,10 +11,16 @@
     --text:#ECEDEE;
     --bg: #444851;
 }
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-bottom: -3rem !important;
+}
 .section-three{
     width: 100%;
-    height: 130vh !important;
+    height: 110vh !important;
     background: var(--foundation-neutral-i-neutral-i-800, #25282D);
+    margin-top: 5rem !important;
 }
 .heading{
     text-align: center;

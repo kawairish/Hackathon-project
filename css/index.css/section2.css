@@ -14,8 +14,9 @@
 
 .section-two{
     width: 100%;
-    height: max-content;
+    height: 100vh !important;
     background: #FFF;
+    margin-top: 3rem !important;
 }
 .header{
     text-align: center;
@@ -23,7 +24,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
-    margin: 40px;
+    margin-bottom: 3rem !important;
 }
 .contents {
     width: 90% !important;

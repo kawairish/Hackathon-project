@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary: #EA9337;
+    --secondary:#25282D ;
+    --text:#ECEDEE;
+    --bg: #444851;
+}
+a{
+    text-decoration: none;
+    color: var(--bg); 
+} 
+li{
+    list-style: none;
+}
+
+span{
+    color: var(--primary);
+}
+.navbar{
+    background: var(--foundation-secondary-secondary-50, #FDF4EB);
+box-shadow: 0px 4px 16px 0px rgba(20, 20, 20, 0.24);
+}
+
+.navbar-brand img{
+    width: 5rem;
+    height: 4rem;
+    flex-shrink: 0;
+}
+#first-link{
+    color: var(--secondary)
+}
+.nav-link{
+    color: var(--bg);
+    
+}
+#nav-link2{
+    color: var(--text);
+    background-color: var(--primary);
+    padding: 3px 10px !important;
+    border-radius: 3rem;
+}
+#nav-link3{
+    color: var(--bg);
+    
+}
+#nav-link4{
+    color: var(--bg);
+    
+}
+#nav-link1{
+    color: var(--bg);
+    
+}
+
+.navbar-nav li a{
+    color: var(--text);
+}
+.btn{
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition:.3s ease all;
+    padding: 0.75rem 2.4rem;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+.btn-1{
+    background-color: var(--text);
+    color: var(--primary);
+}
+.btn-1:hover{
+    background-color: var(--primary);
+    color: var(--text)
+}
+.btn-2{
+    background-color: var(--primary);
+    color: #ECEDEE;
+}
+.btn-2:hover{
+    color: var(--primary);
+}
+
+
+.wrapper{
+    width: 80% !important;
+    margin-inline: auto !important;
+    margin-top: 3rem !important;
+}
+.header {
+    margin-top: 5rem !important;
+}
+
+.img-wrapper{
+    background: linear-gradient(0deg, #153B87 0%, #153B87 100%), #153B87;
+    margin-bottom: 0.5rem !important;
+}
+.img-div{
+    background-color: #F5F5F5;
+    padding-bottom: 1rem !important;
+}
+
+/* footer */
+
+footer h5{
+    color: #153B87;
+}
+.footer-wrapper{
+    background-color: #EA9337;
+}
+
+.footer-img{
+    background-color: var(--text);
+}
