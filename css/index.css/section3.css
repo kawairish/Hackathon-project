@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    --primary:#5189F7 ;
+    --secondary:#25282D ;
+    --text:#ECEDEE;
+    --bg: #444851;
+}
+.section-three{
+    width: 100%;
+    height: 130vh !important;
+    background: var(--foundation-neutral-i-neutral-i-800, #25282D);
+}
+.heading{
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: normal;
+}
+.heading span{
+    color: var(--primary);
+}
+.testimonials{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-gap:0;
+    justify-content: center;
+    margin: 0 auto;
+}
+.each-testimonial{
+    position: relative;
+    overflow: hidden;
+}
+.testimonials img{
+    width: 144px;
+    height: 480px;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: transform 0.3s;
+}
+.each-testimonial .text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.each-testimonial p{
+    padding: 5px 0px 15px;
+}
+.each-testimonial span{
+    color: var(--foundation-secondary-secondary-500, #EA9337);
+}
+.each-testimonial:hover img {
+    width: 480px;
+    height: 480px;
+    filter: grayscale(10%);
+    transform: scale(1.2); /*Regain actual width on hover*/
+}
+.each-testimonial:hover .text {
+    opacity: 1; /* Show the text on hover */
+}
+.get-started{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.click-start{
+    border-radius: 7px;
+    border: none;
+    background: var(--foundation-secondary-secondary-500, #EA9337);
+    margin: 40px 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+.click-start i{
+    color: var(--foundation-neutral-i-neutral-i-50, #ECEDEE);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-style: normal;
+}
+
+/* Responsiveness of the design */
+@media only screen and (max-width: 600px){
+    .heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .testimonials{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .testimonials img{
+        width: 80%;
+        height: fit-content;
+        margin: 20px;
+    }
+    .each-testimonial .text{
+        font-size: 13px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .heading{
+        text-align: center;
+        font-size: 30px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium devices and up */
+    }
+    .testimonials img{
+        width: 80%;
+        height: 80%;
+    }
+    .each-testimonial .text{
+        font-size: 14px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on large devices and up */
+    }
+    .testimonials img{
+        width: 90%;
+        height: 90%;
+    }
+    .each-testimonial .text{
+        font-size: 14px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials {
+        grid-template-columns: repeat(4, 1fr); /* Four columns on extra large devices and up */
+    }
+    .testimonials img{
+        width: 90%;
+        height: 95%;
+    }
+    .each-testimonial .text{
+        font-size: 15px;
+        width: fit-content;
+    }
+    .each-testimonial:hover img {
+        width: 100%;
+        height: fit-content;
+    }
+    .each-testimonial:hover .text {
+        opacity: 1; /* Show the text on hover */
+    }
+    .click-start i{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .heading{
+        text-align: center;
+        font-size: 40px;
+    }
+    .testimonials{
+        grid-template-columns: repeat(8, auto);
+    }
+    .testimonials img{
+        width: 144px;
+        height: 480px;
+    }
+    .each-testimonial .text{
+        font-size: 18px;
+    }
+    .each-testimonial:hover img {
+        width: 480px;
+        height: 480px;
+    }
+    .click-start i{
+        font-size: 20px; 
+    }
+}
+

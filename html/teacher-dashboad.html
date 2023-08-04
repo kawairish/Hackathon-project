@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/logo-top.png">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="bar-nav my-5 mx-3 d-flex flex-column align-items-start">
+            <div class="logo mb-5">
+                <img src="" alt="">
+            </div>
+            <ul class="list.bar mb-5 pb-5">
+                <li class="nav-link nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-home.svg" alt="">
+                    Dashboard</li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-profile-2-user.svg" alt="">
+                    Student(s) <span class="list-span@@ ms-4 border rounded-pill py-1 px-2">198</span></li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-folder-2.svg" alt="">
+                    Content Library</li>
+                <li class="nav-link mb-3">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-document-download.svg" alt="">
+                    Download Manager</li>
+                <li class="nav-link ">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-chart.svg" alt="">
+                    Progress & Analytics</li>
+            </ul>
+            <div class="nav-btn" >
+                <button class="btn">
+                    <span>
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-notification-bing.svg" alt="">
+                </span>
+                    Notifications
+                </button> <br>
+                <button class="btn">
+                    <span><img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-24-support.svg" alt=""></span>
+                    Support
+                </button> <br>
+                <button class="btn">
+                    <img src="../images/dashboard-nav-tab-vuesax-broken-vuesax-broken-logout.svg" alt="">
+                    Logout
+                </button>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- main section -->
+    <main>
+        <div class="top-search d-flex justify-content-between align-items-center  mb-3">
+            <input type="search" name="" id="" placeholder="Search courses, students,  etc..." class="">
+            <div class="profile d-flex">
+                <img src="../images/dashboard-teacher-profile-picture.png" alt="">
+                <div class="dropdown">
+                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Patricia Boateng
+                </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper d-flex  gap-3">
+            <div class="teacher-wrapper">
+                <div class="teacher-bar ms-4">
+                    <div class="title d-flex justify-content-between mb-3">
+                        <img src="../images/dashboard-teacher-profile-picture.png" alt="">
+                        <span>
+                            <div class="dropdown">
+                                <a class="btn btn-sm btn-outline-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Edit profile
+                                </a>
+            
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="fs-6">Patricia Boateng</h1>
+                        <div class="profile-icons d-flex gap-3">
+                            <img src="../images/dashboard-message-sms.svg" alt="" class="px-2 py-1 border rounded">
+                            <span>
+                                <img src="../images/dashboard-call-calling.svg" alt="" class="px-2 py-1 border rounded">
+                            </span>
+                        </div>
+                    </div>
+                    <p class="grade">Grade 1</p>
+                    <div class="d-flex justify-content-between gap-4 mt-5">
+                        <p class="d-flex flex-column fw-bold fs-5">200 <span class="fw-normal fs-6">Enrolled</span></p>
+                        <p class="d-flex flex-column fw-bold fs-5">2k+ <span class="fw-normal fs-6">Reviewed</span></p>
+                        <p class="d-flex flex-column fw-bold fs-5">3k+ <span class="fw-normal fs-6">Live classes</span></p>
+                    </div>
+                </div>
+                
+                <div class="student-grade ms-4">
+                    <p>Grade Students</p>
+                    <div class="student row row-cols-2 row-cols-md-3 g-4 ">
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2">
+                                    <img src="../images/dashboard-student1.png" alt="">
+                                    <span class=" d-flex flex-column gap-2">
+                                        <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                        <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                        <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                    </span>
+                                </div>
+                                <h3 class="fs-6">Reynold B.</h3>
+                        </div>
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2 ">
+                                <img src="../images/dashboard-student2.png" alt="">
+                                <span class=" d-flex flex-column gap-2">
+                                    <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <h3 class="fs-6">Justin Q.</h3>
+                        </div>
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2 ">
+                                <img src="../images/student-3.png" alt="">
+                                <span class=" d-flex flex-column gap-2">
+                                    <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <h3 class="fs-6">Stephanie u.</h3>
+                        </div>
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2 ">
+                                <img src="../images/dashboard-student4.png" alt="">
+                                <span class=" d-flex flex-column gap-2">
+                                    <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <h3 class="fs-6">Pamela R.</h3>
+                        </div>
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2 ">
+                                <img src="../images/dashboard-student5.png" alt="">
+                                <span class=" d-flex flex-column gap-2">
+                                    <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <h3 class="fs-6">Charlotte P.</h3>
+                        </div>
+                        <div class="imgicon-wrapper border rounded">
+                            <div class="student-img d-flex gap-2 ">
+                                <img src="../images/dashboard-student6.png" alt="">
+                                <span class=" d-flex flex-column gap-2">
+                                    <span class="border rounded border-info px-1"><img src="../images/dashboard-icon1.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon2.svg" alt=""></span>
+                                    <span class="border rounded border-warning-subtle px-1"><img src="../images/dashboard-icon3.svg" alt=""></span></img>
+                                </span>
+                        </div>
+                            <h3 class="fs-6">Bryan B.</h3>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-2 btn-outline-secondary px-3 py-2 mt-4" type="submit" onclick="window.location.href='./html/student-dashboard.html'">View all students</button>
+            </div>
+            <div class="left-div">
+                <div id="calendar__container">
+                    <div id="calendar__content">
+                        <div id="calendar__content__top">
+                            <div id="calendar__top__title__divider">
+                                <p id="calendar__top__title">My Calendar</p>
+                                <hr id="calendar__top__divider">
+                            </div>
+                
+                            <div id="calendar__top__navigation">
+                                <span id="calendar__left__arrow">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="vuesax/broken/arrow-left">
+                                        <g id="arrow-left">
+                                        <path id="Vector" d="M11.6901 7.93994L9.07005 10.5599C8.30005 11.3299 8.30005 12.5899 9.07005 13.3599L15.5901 19.8799" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M15.59 4.04004L14.55 5.08004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                
+                                <div id="calendar__months__years">
+                                    <select name="months" title="months" id="calendar__months">
+                                    </select>
+                                    <select name="years" title="years" id="calendar__years">
+                                    </select>
+                                </div>
+                
+                                <span id="calendar__right__arrow">
+                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.4 7.93994L16.02 10.5599C16.79 11.3299 16.79 12.5899 16.02 13.3599L9.5 19.8699" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.5 4.04004L10.54 5.08004" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                    
+                                </span>
+                            </div>
+                        </div>
+            
+                        <ul id="calendar__bottom" class="calendar__days">
+                        </ul>
+                    </div>
+                </div>
+                <div class="lesson-task d-flex justify-content-between">
+                    <div class="lesson-plan border rounded">
+                        <h2 class="fs-5 py-2 px-2">Lesson Plan</h2>
+                        <hr>
+                    </div>
+                    <div class="tasks border rounded">
+                        <h2 class="fs-5 px-2 py-2">Tasks</h2>
+                        <hr>
+                        <div class="input my-2 ms-2">
+                            <input type="checkbox" name="" class="px-2" checked>
+                            <label for="">Review assessments</label>
+                        </div>
+                        <div class="input mb-2 ms-2">
+                            <input type="checkbox" name="" class="px-2">
+                            <label for="">Plan next week's goals</label>
+                        </div>
+                        <div class="input d-flex align-items-start gap-2 ms-2">
+                            <input type="checkbox" name="" class="">
+                            <label for="">Update content library and clean download manager</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <script src="../app.js"></script>
+</body>
+</html>
