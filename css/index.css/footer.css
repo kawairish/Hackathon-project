@@ -13,9 +13,9 @@
 }
 footer{
     width: 100%;
-    height: 70vh !important;
-    background-color: #D58632;
-    color: #191717 !important;
+    height: 108vh !important;
+    background-color: #153B87;
+    color: var(--text) !important;
     padding: 100px 0 30px;
     border-top-left-radius:125 px;
     font-size:18px;
@@ -23,38 +23,51 @@ footer{
 }
 footer .container{
     height: 100% !important;
-    
+    width: 85% !important;
+    margin-inline: auto !important;
 }
 footer .col .logo{
-    width: 127.027px;
-    height: 100px; 
+    width: 5.5rem;
+    height: 4.5rem; 
 }
-footer li a{
-    color: #191717;
-}
-.Social-platforms a{
-    background-color: var(--primary);
-    color: #191717;
+.btn-wrapper img{
+    width: 3.8rem !important;
+    margin-top: 1.62rem !important;
+    margin-right: -1.5rem !important;
 }
 
-footer .phone .text{
-    color: #191717;
+.footer-dropdown{
+    margin-top: -2rem !important;
+    margin-bottom: 1rem !important;
 }
+/* footer li a{
+    color: #191717;
+} */
+.Social-platforms a{
+    background-color: var(--primary);
+    /* color: #191717; */
+}
+
+/* footer .phone .text{
+    color: #191717;
+} */
 footer .phone span{
     color: #FDF4EB;
 }
 footer p{
-    color: #1D1E22;
+    color: var(--text);
 }
-
-footer .copyright .text {
+.footer-link{
+    margin-top: -5rem !important;
+}
+/* footer .copyright .text {
     color: #FFFFFF;
 }
 footer .copyright span{
     color: #FFFFFF;
-}
+} */
 footer hr{ 
-    border: 1px solid #FFFFFF;
+    border: 1px solid #EA9337;
     /* color: #FFFFFF; */
 }
 footer ul li{

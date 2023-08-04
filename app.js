@@ -32,65 +32,126 @@ window.addEventListener('scroll', function() {
 //     }
 // });
 
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("slideshow img");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-}
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 3 seconds
-}
 
 // Dashboard
-function Calendar() {
-    this.container = document.querySelector('.calendar');
-    this.date = new Date();
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+                'August', 'September', 'October', 'November', 'December'];
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const minYear = new Date(0).getFullYear();
+const maxYear = new Date(2099, 0, 1).getFullYear();
+
+const prevMonthButton = document.getElementById("calendar__left__arrow");
+const nextMonthButton = document.getElementById("calendar__right__arrow");
+const currentMonthSelected = document.getElementById("calendar__months");
+const monthsSelect = document.getElementById("calendar__months");
+const yearsSelect = document.getElementById("calendar__years");
+const currentMonthDisplay = document.getElementById("calendar__months");
+const calendarDays = document.getElementById("calendar__bottom");
+
+const today = new Date();
+let currentMonth = today.getMonth();
+let currentYear = today.getFullYear();
+
+months.forEach((month, index) => {
+    const option = document.createElement('option');
+    option.value = index;
+    option.appendChild(document.createTextNode(month));
+    monthsSelect.appendChild(option);
+});
+
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum < startNum) {
+    return [];
+    }
+    
+    const result = [];
+    for (let i = startNum; i <= endNum; i++) {
+    result.push(i);
+    }
+    return result;
+};
+
+const years = rangeOfNumbers(minYear, maxYear);
+
+years.forEach((year) => {
+    const option = document.createElement('option');
+    option.value = parseInt(year);
+    option.appendChild(document.createTextNode(parseInt(year)));
+    yearsSelect.appendChild(option);
+});
+
+function updateCalendar() {
+    const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+    const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
+    
+    calendarDays.innerHTML = "";
+    
+    for (let day = 1; day <= lastDayOfMonth.getDate(); day++) {
+    const date = new Date(currentYear, currentMonth, day);
+    const dayElement = document.createElement("li");
+    dayElement.classList.add("calendar__day");
+    
+    if (date.toDateString() === today.toDateString()) {
+        dayElement.classList.add("calendar__today");
+    }
+
+    if (['Sat', 'Sun'].includes(date.toDateString().slice(0, 3))) {
+        dayElement.classList.add('calendar__week__day');
+    }
+    
+    dayElement.textContent = day;
+    calendarDays.appendChild(dayElement);
+}
 }
 
-Calendar.prototype.init = function() {
-    var self = this;
+monthsSelect.addEventListener("change", () => {
+    currentMonth = parseInt(monthsSelect.value);
+    updateCalendar();
+});
 
-    // Create the calendar table
-    var table = document.createElement('table');
-    table.setAttribute('class', 'calendar-table');
 
-    // Create the calendar header
-    var headerRow = document.createElement('tr');
-    var headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Sun';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Mon';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Tue';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Wed';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Thu';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Fri';
-    headerRow.appendChild(headerCell);
-    headerCell = document.createElement('th');
-    headerCell.innerHTML = 'Sat';
-    headerRow.appendChild(headerCell);
-    table.appendChild(headerRow);
+yearsSelect.addEventListener("change", () => {
+    currentMonth = yearsSelect.value;
+    updateCalendar();
+});
 
-    // Create the calendar body
-    var currentMonth = this.date.getMonth();
-    var currentYear = this.date.getFullYear();
-    var daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-    var firstDay = new Date(currentYear, currentMonth, 1).getDay();
-    var lastDay = new Date(currentYear, currentMonth, daysInMonth).getDay();
+prevMonthButton.addEventListener("click", () => {
+    if (currentMonth === 0) {
+    currentMonth = 11;
+    currentYear--;
+    } else {
+    currentMonth--;
+    }
+    updateCalendar();
+});
 
-    var bodyRow = document
+nextMonthButton.addEventListener("click", () => {
+    if (currentMonth === 11) {
+    currentMonth = 0;
+    currentYear++;
+    } else {
+    currentMonth++;
+    }
+    updateCalendar();
+});
+
+updateCalendar();
+
+
+function updateSelectedMonth() {
+    let selectedIndex = currentMonthDisplay.value;
+
+    prevMonthButton.addEventListener('click', () => {
+    selectedIndex = (selectedIndex - 1 + months.length) % months.length;
+    updateSelectedMonth();
+});
+
+    nextMonthButton.addEventListener('click', () => {
+    selectedIndex = (selectedIndex + 1) % months.length;
+    updateSelectedMonth();
+});
+
+    currentMonth.valueOf = months[selectedIndex];
 }
+
+updateSelectedMonth();  

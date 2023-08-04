@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css/footer.css">
     <link rel="stylesheet" href="../css/index.css/section3.css">
+    <link rel="stylesheet" href="./css/index.css/section2.css">
     <link rel="stylesheet" href="../css/index.css/section1.css">
     <link rel="stylesheet" href="../css/index.css/header.css">
     <link rel="stylesheet" href="../css/index.css">
@@ -14,10 +15,10 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <nav class="navbar navbar-expand-lg fixed-top py-2 px-5 mx-auto">
                 <div class="container-fluid gap-md-5">
                     <a class="navbar-brand" href="#">
-                        <img src="../images/logo.png" alt="">
+                        <img src="./images/logo-top.png" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -125,12 +126,47 @@
             </div>
         </section>
         <!-- section 2 -->
-        
+        <section class="section-two">
+            <h2 class="header">Everything a child needs to excel in school</h2>
+            <div class="contents">
+                <div class="top-content">
+                    <div class="image-container">
+                        <img src="./images/image5.png">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/image6.png">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                </div>
+                
+                <div class="bottom-content">
+                    <div class="image-container">
+                        <img src="./images/image7.png">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/image8.png">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/image9.png">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                </div>
+                <div class="side-content">
+                    <div class="image-container">
+                        <img src="./images/image10.jpeg">
+                        <p class="hover-words">Video resources</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     <!-- section 3 -->
     <section class="section-three">
-        <h2 class="heading py-5">What <span>parents</span> say about US</h2>
+        <h2 class="heading py-5">What <span>people</span> say about US</h2>
         <div class="testimonials ">
             <div class="each-testimonial">
                 <img src="../images/image11.png">
@@ -166,7 +202,7 @@
             </div>
         </div>
         <div class="get-started">
-            <button class="btn btn-2 btn-outline-light px-3 py-2 mt-4" type="submit" onclick="window.location.href='./getstarted.html'">Get your child started now</button>
+            <button class="btn btn-2 btn-outline-light px-3 py-2 mt-4" type="submit" onclick="window.location.href='./html/student-dashboard.html'">Get your child started now</button>
         </div>
     </section>
 
@@ -174,11 +210,18 @@
     </main>
 
     <footer>
-        <div class="container w-75 mx-auto">
+        <div class="container mx-auto">
             <div class="row d-flex justify-content-center align-items-center gap-5 flex-md-nowrap py-5 mx-auto">
                 <div class="col">
-                    <img src="../images/logo-1.png" class="logo">
-                    <p class="mt-4">Bridging education gaps,one child at a time with EmpowerED.</p>
+                    <img src="./images/logo-empower-ed-1.png" class="logo">
+                    <h5 class="mt-4">Bridging education gaps,one child at a time with EmpowerED.</h5>
+                    <p>Subscribe To Our Newsletter</p>
+                    <p class="mb-4">Get latest news</p>
+                    <button class="btn btn-2 btn-outline-light px-2 py-1 mt-4 text-uppercase border rounded fs-6"></button>
+                    <div class="sub-btn "><button class="btn btn-2 btn-outline-light px-2 py-1 mt-4 text-uppercase border rounded fs-6">subscribe</button></div>
+                    <div class="btn-wrapper">
+                        <img src="./images/whatsapp.png" alt="">
+                        <button class="btn btn-2 btn-outline-light px-2 py-1 mt-4 text-uppercase border rounded fs-6">live chat</button></div>
                 </div>
                 <div class="col">
                     <h3 class="mb-4">Explore</h3>
@@ -212,7 +255,7 @@
             
             
             </div>
-            <div class="col d-flex align-items-center gap-3 mb-4">
+            <div class="col footer-link d-flex justify-content-end align-items-center gap-3 mb-4">
                 <h3 class="fs-6">Follow us on our social media handles</h3>
                 <div class="Social-platforms d-flex gap-3">
                     <a href="" class="border rounded px-2 py-1"><i class="fa-brands fa-instagram"></i></a>
@@ -220,6 +263,20 @@
                     <a href="https://twitter.com/i/flow/login" class="border rounded px-2 py-1"><i class="fa-brands fa-twitter"></i></a>
                     <a href="" class="border rounded px-2 py-1"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
+            </div>
+            <div class="footer-dropdown d-flex justify-content-center align-items-end gap-4">
+                <div class="dropdown me-5 pe-5">
+                    <button class="btn btn-secondary dropdown-toggle text-uppercase fs-6 border rounded" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Prefered language
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-2 btn-outline-light px-2 py-1 mt-4 text-uppercase rounded-pill fs-6" type="submit" onclick="window.location.href='./html/student-dashboard.html'">english</button>
+                <button class="btn btn-2 btn-outline-light px-2 py-1 mt-4 text-uppercase rounded-pill fs-6" type="submit" onclick="window.location.href='./html/student-dashboard.html'">French</button>
             </div>
             <hr>
             <div class="row copyright">
