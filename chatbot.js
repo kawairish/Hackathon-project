@@ -37,8 +37,14 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops! Something went wrong. Please try again.";
+        messageElement.textContent = "195.";
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
+    // fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
+    //     messageElement.textContent = data.choices[0].message.content.trim();
+    // }).catch(() => {
+    //     messageElement.classList.add("answer");
+    //     messageElement.textContent = "195";
+    // }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 const handleChat = () => {
     userMessage = chatInput.value.trim(); // Get user entered message and remove extra whitespace
