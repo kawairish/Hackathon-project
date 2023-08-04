@@ -142,8 +142,8 @@ li {
 
 #calendar__months,
 #calendar__years {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /* -webkit-appearance: none;
+    -moz-appearance: none; */
     background: transparent;
     outline: none;
     border: none;
